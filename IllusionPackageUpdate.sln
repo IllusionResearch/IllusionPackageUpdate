@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32120.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IllusionPackageUpdate", "IllusionPackageUpdate\IllusionPackageUpdate.csproj", "{132E6043-4E47-4A5E-8EE1-DE933B4BD8CF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "IllusionPackageCore", "IllusionPackageCore\IllusionPackageCore.shproj", "{C38D1E0D-7011-4FCB-8783-BA44CA4B3ABC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{2221E89B-DFAC-4A59-8AA6-F4117FCC156D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		IllusionPackageCore\IllusionPackageCore.projitems*{132e6043-4e47-4a5e-8ee1-de933b4bd8cf}*SharedItemsImports = 5
+		IllusionPackageCore\IllusionPackageCore.projitems*{c38d1e0d-7011-4fcb-8783-ba44ca4b3abc}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{132E6043-4E47-4A5E-8EE1-DE933B4BD8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132E6043-4E47-4A5E-8EE1-DE933B4BD8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132E6043-4E47-4A5E-8EE1-DE933B4BD8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132E6043-4E47-4A5E-8EE1-DE933B4BD8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3564DF9-7B2F-447D-9901-7062783C665F}
+	EndGlobalSection
+EndGlobal

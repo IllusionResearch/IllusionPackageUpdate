@@ -1,0 +1,3 @@
+[submodule "IllusionPackageCore"]
+	path = IllusionPackageCore
+	url = git@github.com:IllusionResearch/IllusionPackageCore.git
