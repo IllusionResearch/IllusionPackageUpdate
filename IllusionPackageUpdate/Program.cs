@@ -49,6 +49,5 @@ if (webPackages is not null && webPackages.TryGetValue(GameToken.Koikatsu, out v
         }
     });
 
-    var path = Path.Combine(Config.GameDir, "packages.json");
-    await File.WriteAllTextAsync(path, JsonSerializer.Serialize(localPackages));
+    await File.WriteAllTextAsync(Config.PackagesPath, JsonSerializer.Serialize(localPackages));
 }

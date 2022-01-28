@@ -9,13 +9,12 @@ internal static class FS
 {
     internal static async ValueTask<ConcurrentDictionary<string, LocalPackage>> GetLocalPackages(CancellationToken cancellationToken = default)
     {
-        var path = Path.Join(Config.GameDir, "packages.json");
-        if (!File.Exists(path)) return new();
+        if (!File.Exists(Config.PackagesPath)) return new();
 
-        await using var stream = File.OpenRead(path);
+        await using var stream = File.OpenRead(Config.PackagesPath);
 
         var result = await JsonSerializer.DeserializeAsync<ConcurrentDictionary<string, LocalPackage>>(stream, cancellationToken: cancellationToken);
-        if (result is null) throw new InvalidOperationException("No packets");
+        if (result is null) throw new InvalidOperationException($"{Config.PackagesPath} is invalid. Fix or remove file. Must be valid json");
 
         return result;
     }
