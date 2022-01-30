@@ -16,7 +16,7 @@ if (webPackages is not null && webPackages.TryGetValue(GameToken.Koikatsu, out v
     {
         if (localPackages.TryGetValue(webPackage.Key, out var localPackage))
         {
-            if (webPackage.Value.Version == localPackage.Version)
+            if (webPackage.Value.Version <= localPackage.Version)
             {
                 Console.WriteLine($"> skipped [{webPackage.Key}] {webPackage.Value.Version} (already installed with same version)");
                 return;
